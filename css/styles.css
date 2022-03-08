@@ -70,7 +70,10 @@ ul {
   font-weight: bold;
 }
 
-.contacts-nav .link:hover {
+.contacts-nav .link:hover,
+.contacts-nav .link:focus,
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
   color: var(--accent-color);
 }
 
@@ -92,8 +95,11 @@ ul {
 /* Button */
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   text-decoration: none;
+  width: 200px;
+  height: 50px;
 }
 
 .button.primary {
@@ -105,16 +111,17 @@ ul {
 }
 
 .button.secondary {
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(primary-text-color);
   background-color: var(--secondary-button-color);
+  color: var(--primary-text-color);
 }
 
 .button.secondary:hover,
-.button.secondary:focus,
-.button.secondary.current {
+.button.secondary:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -192,6 +199,7 @@ ul {
 .portfolio-info {
   font-size: 16px;
   line-height: 1.87;
+  font-weight: normal;
 
   color: var(--secondary-text-color);
 }
